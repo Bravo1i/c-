@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int g_a = 10;
+int g_b = 10;
+
+int main()
+{
+  int a = 10;
+  int b = 10;
+  cout << "globle a adress =" << (int)&a << endl;
+  
+}
