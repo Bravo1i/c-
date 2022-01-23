@@ -27,11 +27,16 @@ int mySwap03(int &a,int &b)
 	//同值传递 引用传递形参也会改变实参
 }
 
+void showValue(const int &val)//常引用形参不修改实参
+{
+	cout << "val=" << val << endl;
+}
 int main()
 {
-	int a = 10;
-	//创建引用
-	int &b = a;
+	// int a = 10;
+	// 创建引用
+	// int &b = a;
+	// int * const b = &a
 	//引用基本语法
 	//应用必须初始化（声明时）
 	//引用一旦初始化，就不能更改了 int &b = c 不可以
@@ -44,5 +49,8 @@ int main()
 	cout << "b=" << b << endl;
 	//改变引用值，原值同样改变
 
+	//常量引用
+	//用来修饰形参，防止误操作
+	const int & ref = 10;//只读状态，不可修改
 	return 0;
 }
