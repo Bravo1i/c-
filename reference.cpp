@@ -19,7 +19,7 @@ void mySwap02(int *a,int*b)
 	//地址交换数值函数
 }
 //引用传递函数
-int mySwap03(int &a,int &b)
+void mySwap03(int &a,int &b)
 {
 	int temp = a;
 	a = b;
@@ -33,9 +33,9 @@ void showValue(const int &val)//常引用形参不修改实参
 }
 int main()
 {
-	// int a = 10;
+	int a = 10;
 	// 创建引用
-	// int &b = a;
+	int &b = a;
 	// int * const b = &a
 	//引用基本语法
 	//应用必须初始化（声明时）
