@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-using namespase std;
+using namespace std;
 
 class Point
 {

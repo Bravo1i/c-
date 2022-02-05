@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+
+
 class Cube
 {
 public:
@@ -45,9 +47,9 @@ public:
 	}
 	bool isSameByClass(Cube &c2)
 	{
-		if(m_L == c2.getL() && m_W == c2.getW() && m_H == c2.getH)
-			return TRUE;
-		return FALSE;
+		if(m_L == c2.getL() && m_W == c2.getW() && m_H == c2.getH())
+			return 1;
+		return 0;
 	}
 
 	
@@ -55,7 +57,14 @@ public:
 private:
 	int m_W,m_L,m_H;
 
-}
+};
+
+bool isSame(Cube &c1, Cube &c2)
+	{
+		if(c1.getL() == c2.getL() && c1.getW() == c2.getW() && c1.getH() == c2.getH())
+			return 1;
+		return 0;
+	}
 
 int main(void)
 {
@@ -85,9 +94,3 @@ int main(void)
 	return 0;
 }
 
-bool isSame(Cube &c1, Cube &c2)
-	{
-		if(c1.getL() == c2.getL() && c1.getW() == c2.getW() && c1.getH() == c2.getH)
-			return TRUE;
-		return FALSE;
-	}
