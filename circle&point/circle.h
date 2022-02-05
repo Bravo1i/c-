@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
-using namespace std;
 #include "point.h"
+using namespace std;
+
 
 class Circle
 {

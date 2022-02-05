@@ -1,6 +1,5 @@
 #include "point.h"
 
-
 void Point::setX(int x)
 {
 	m_X = x;
@@ -17,4 +16,3 @@ int Point::getY(void)
 {
 	return m_Y;
 }
-
