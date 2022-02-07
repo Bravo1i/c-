@@ -8,7 +8,7 @@ protected:
 	int m_B;
 private:
 	int m_C;
-}
+};
 class Son1 :public Base1
 {
 public:
@@ -19,7 +19,7 @@ public:
 		//m_C = 10;//父类私有权限成员，子类无法访问
 	}
 	int b;
-}
+};
 void test01()
 {
 	Son1 s1;
@@ -36,7 +36,7 @@ public:
 		//m_C = 10;//父类私有权限成员，子类无法访问
 	}
 	int b;
-}
+};
 void test02()
 {
 	Son2 s2;
@@ -53,7 +53,7 @@ public:
 		//m_C = 10;//父类私有权限成员，子类无法访问
 	}
 	int b;
-}
+};
 void test03()
 {
 	Son3 s3;
