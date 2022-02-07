@@ -41,7 +41,7 @@ using namespace std;
  	int m_A;
  	int m_B;
     int *m_Age;
- }
+ };
 
  void test01()
  {
@@ -51,7 +51,7 @@ using namespace std;
  	Person p2;
  	p2.m_A = 10;
  	p2.m_B = 10;
- 	Person P3 = p1 + p2;
+ 	Person p3 = p1 + p2;
  	cout << "p3.m_A = " << p3.m_A <<endl;
  	cout << "p3.m_B = " << p3.m_B <<endl;
  }
@@ -73,16 +73,16 @@ ostream & operator<<(ostream &cout, Person &p)
 void test02()
 {
     Person p1;
-    p.m_A = 10;
-    p.m_B = 10;
-    cout << p << endl;
+    p1.m_A = 10;
+    p1.m_B = 10;
+    cout << p1 << endl;
 }
 void test03()
 {
     Person p1;
-    p.m_B = 10;
-    p.m_A = 10;
-    cout << ++p << endl;
+    p1.m_B = 10;
+    p1.m_A = 10;
+    cout << ++p1 << endl;
 }
 void test04()
 {
