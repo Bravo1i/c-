@@ -1,19 +1,19 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 using namespace std;
 
 class Person
 {
 public:
-	char m_Name[64];//ĞÕÃû
-	int m_Age;//ÄêÁä
+	char m_Name[64];//å§“å
+	int m_Age;//å¹´é¾„
 
 };
 void test01()
 {
-	ofstream ofs;//Ğ´ÎÄ¼ş
+	ofstream ofs;//å†™æ–‡ä»¶
 	ofs.open("person.txt", ios::out | ios::binary);
-	Person p = { "ÕÅÈı" , 18 };
+	Person p = { "å¼ ä¸‰" , 18 };
 	ofs.write((const char*)&p, sizeof(Person));
 	ofs.close();
 
@@ -21,12 +21,12 @@ void test01()
 	ifs.open("person.txt", ios::in | ios::binary);
 	if (!ifs.is_open())
 	{
-		cout << "ÎÄ¼ş´ò¿ªÊ§°Ü" << endl;
+		cout << "æ–‡ä»¶æ‰“å¼€å¤±è´¥" << endl;
 		return;
 	}
 	Person p2;
 	ifs.read((char*)&p2, sizeof(Person));
-	cout << "ĞÕÃû£º" << p2.m_Name << " ÄêÁä£º" << p2.m_Age << endl;
+	cout << "å§“åï¼š" << p2.m_Name << " å¹´é¾„ï¼š" << p2.m_Age << endl;
 	ifs.close();
 }
 
